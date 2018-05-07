@@ -1,0 +1,27 @@
+<h1>
+    Preguntas:
+</h1>
+
+
+<table>
+        <% for (var i in quizzes) { %>
+        <% var quiz = quizzes[i]; %>
+    <tr>
+        <td>
+            <%= quiz.id %>
+        </td>
+        <td>
+            <%= quiz.question %>
+        </td>
+        <td>
+            <%= quiz.answer%>
+        </td>
+    </tr>
+<% } %>
+
+</table>
+
+
+<a href="/">Home</a>
+<a href="/credits">Credits</a>
+<a href="/quizzes">Index</a>

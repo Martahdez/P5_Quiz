@@ -10,6 +10,6 @@ router.get('/', function(req, res, next) {
 router.get('/credits', function(req, res, next) {
     res.render('credits');
 });
-//router.get('/quizzes', quizController.index);
+router.get('/quizzes', quizController.index);
 
 module.exports = router;
